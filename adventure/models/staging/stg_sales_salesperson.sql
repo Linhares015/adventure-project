@@ -6,9 +6,9 @@ with
             ,salesquota
             ,bonus
             ,commissionpct
-            ,salesytd
-            ,saleslastyear
-            ,rowguid
+            --,salesytd
+            --,saleslastyear
+            --,rowguid
             ,modifieddate
         from {{ source('adventure', 'sales_salesperson') }}
     )

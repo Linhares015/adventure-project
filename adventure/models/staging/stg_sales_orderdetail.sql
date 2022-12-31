@@ -5,13 +5,13 @@ with
             ,salesorderid
             ,salesorderdetailid
             ,productid
-            ,specialofferid
+            --,specialofferid
             ,unitprice
             ,unitpricediscount
-            ,linetotal
-            ,rowguid
+            --,linetotal
+            --,rowguid
             ,modifieddate
-            ,carriertrackingnumber
+            --,carriertrackingnumber
         from {{ source('adventure', 'sales_orderdetail') }}
     )
 

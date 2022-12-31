@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_sales_customer
+    description: Tabela com as informações de clientes e seu vinculo com as vendas
+    columns:
+       - name: customerid
+         description: chave primaria da tabela e vinculo com a de vendas
+         tests:
+          - unique
+          - not_null
+
+       - name: personid
+         description: chave estrangeira para vinculo com pessoa
+
+       - name: territoryid
+         description: chave estrangeira para vinculo com território
+
+       - name: modifieddate
+         description: data de modificação do dado da tabela

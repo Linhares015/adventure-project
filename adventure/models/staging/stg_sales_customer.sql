@@ -3,11 +3,11 @@ with
         select
             customerid
             ,personid
-            ,storeid
+            --,storeid
             ,territoryid
-            ,rowguid
+            --,rowguid
             ,modifieddate
-            ,accountnumber
+            --,accountnumber
         from {{ source('adventure', 'sales_customer') }}
     )
 
