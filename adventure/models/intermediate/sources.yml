@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: stg
+    description: Banco de replica do AdventureWorks
+    schema: dbt_stg
+    tables:
+      - name: stg_sales_orderdetail
+
+      - name: stg_sales_orderheader
+
+      - name: stg_production_product
+
+      - name: stg_sales_currencyrate
+
+      - name: stg_sales_customer
+
+      - name: stg_sales_salesperson

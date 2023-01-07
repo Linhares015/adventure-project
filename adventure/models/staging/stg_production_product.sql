@@ -17,7 +17,7 @@ with
             ,sellenddate
             ,discontinueddate
             --,modifieddate
-            ,"Name" as "name"
+            ,"Name" as name_product
             ,productnumber
             ---,color
             --,Size
