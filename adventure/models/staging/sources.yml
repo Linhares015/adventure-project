@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: adventure
+    description: Banco de replica do AdventureWorks
+    schema: raw_adventure
+    tables:
+      - name: sales_orderdetail
+
+      - name: sales_orderheader
+
+      - name: sales_customer
+
+      - name: sales_salesperson
+
+      - name: production_product
+
+      - name: sales_currencyrate

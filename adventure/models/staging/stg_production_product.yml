@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_production_product
+    description: Tabela com as informações dos produtos
+    columns:
+       - name: productid
+         description: chave primaria da tabela
+         tests:
+          - unique
+          - not_null

@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_sales_salesperson
+    description: Tabela com as informações dos vendedores
+    columns:
+       - name: businessentityid
+         description: pk da tabela, fará o vinculo com salespersonid da fato de vendas
+         tests:
+          - unique
+          - not_null
+
+       - name: territoryid
+         description: chave estrangeira para vinculo com território
+
+       - name: salesquota
+         description: a cota de cada vendedor
+
+       - name: bonus
+         description: o bonus aplicado a cada vendedor
+
+       - name: commissionpct
+         description: a comissão dos vendedores
