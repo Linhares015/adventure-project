@@ -6,7 +6,7 @@ with
             --,storeid
             ,territoryid
             --,rowguid
-            ,modifieddate
+            --,modifieddate
             --,accountnumber
         from {{ source('adventure', 'sales_customer') }}
     )

@@ -2,30 +2,30 @@ with
     source_sales_orderheader as (
         select
             onlineorderflag
-            ,revisionnumber
-            ,'status'
+            --,revisionnumber
+            --,"status"
             ,salesorderid
             ,customerid
             ,salespersonid
             ,territoryid
-            ,billtoaddressid
-            ,shiptoaddressid
-            ,shipmethodid
-            ,creditcardid
+            --,billtoaddressid
+            --,shiptoaddressid
+            --,shipmethodid
+            --,creditcardid
             ,currencyrateid
             ,subtotal
             ,taxamt
             ,freight
-            ,totaldue
-            ,rowguid
+            --,totaldue
+            --,rowguid
             ,orderdate
             ,duedate
-            ,shipdate
-            ,modifieddate
-            ,salesordernumber
+            --,shipdate
+            --,modifieddate
+            --,salesordernumber
             ,purchaseordernumber
-            ,accountnumber
-            ,creditcardapprovalcode
+            --,accountnumber
+            --,creditcardapprovalcode
             --,comment
         from {{ source('adventure', 'sales_orderheader') }}
     )

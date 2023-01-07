@@ -10,7 +10,7 @@ with
             ,unitpricediscount
             --,linetotal
             --,rowguid
-            ,modifieddate
+            --,modifieddate
             --,carriertrackingnumber
         from {{ source('adventure', 'sales_orderdetail') }}
     )

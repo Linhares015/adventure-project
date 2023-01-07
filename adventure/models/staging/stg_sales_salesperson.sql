@@ -9,7 +9,7 @@ with
             --,salesytd
             --,saleslastyear
             --,rowguid
-            ,modifieddate
+            --,modifieddate
         from {{ source('adventure', 'sales_salesperson') }}
     )
 
