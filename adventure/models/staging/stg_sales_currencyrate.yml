@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sales_currencyrate
+    description: Tabela com as informações de clientes e seu vinculo com as vendas
+    columns:
+       - name: currencyrateid
+         description: chave primaria da tabela
+         tests:
+          - unique
+          - not_null

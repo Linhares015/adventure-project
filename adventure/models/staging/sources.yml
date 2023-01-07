@@ -12,3 +12,7 @@ sources:
       - name: sales_customer
 
       - name: sales_salesperson
+
+      - name: production_product
+
+      - name: sales_currencyrate
