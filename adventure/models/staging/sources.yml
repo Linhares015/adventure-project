@@ -16,3 +16,7 @@ sources:
       - name: production_product
 
       - name: sales_currencyrate
+
+      - name: sales_store
+
+      - name: sales_territory
