@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: intermediate
+    description: Banco de replica do AdventureWorks
+    schema: dbt_intermediate
+    tables:
+      - name: int_fct_sales
