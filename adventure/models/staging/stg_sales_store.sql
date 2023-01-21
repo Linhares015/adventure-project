@@ -7,7 +7,7 @@ with
             --,rowguid
             --,modifieddate
             ,"Name" as name_store
-        from {{ source('adventure', 'sales_store') }}
+        from {{ source('adventure', 'raw_sales_store') }}
     )
 
 select *

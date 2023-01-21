@@ -8,7 +8,7 @@ with
             --,modifieddate
             ,fromcurrencycode
             ,tocurrencycode
-        from {{ source('adventure', 'sales_currencyrate') }}
+        from {{ source('adventure', 'raw_sales_currency_rate') }}
     )
 
 select *

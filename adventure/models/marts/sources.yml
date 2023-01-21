@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: intermediate
     description: Banco de replica do AdventureWorks
-    schema: dbt_intermediate
+    schema: adventureworks_intermediate
     tables:
-      - name: int_fct_sales
-
       - name: int_dim_product
+
+      - name: int_fct_sales
