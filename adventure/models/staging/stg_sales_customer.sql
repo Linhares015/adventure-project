@@ -8,7 +8,7 @@ with
             --,rowguid
             --,modifieddate
             --,accountnumber
-        from {{ source('adventure', 'sales_customer') }}
+        from {{ source('adventure', 'raw_sales_customer') }}
     )
 
 select *

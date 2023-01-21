@@ -1,7 +1,7 @@
 with
     product as (
         select *
-        from {{ source('stg', 'stg_production_product') }}
+        from {{ source('stg', 'stg_product_product') }}
     )
 
     ,transformacoes as (

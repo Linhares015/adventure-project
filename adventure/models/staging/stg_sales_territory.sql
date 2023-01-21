@@ -11,7 +11,7 @@ with
             ,"Name" as name_territory
             ,countryregioncode
             ,"Group" as group_territory
-        from {{ source('adventure', 'sales_territory') }}
+        from {{ source('adventure', 'raw_sales_territory') }}
     )
 
 select *

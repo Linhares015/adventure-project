@@ -12,7 +12,7 @@ with
             --,rowguid
             --,modifieddate
             --,carriertrackingnumber
-        from {{ source('adventure', 'sales_orderdetail') }}
+        from {{ source('adventure', 'raw_sales_order_detail') }}
     )
 
 select *

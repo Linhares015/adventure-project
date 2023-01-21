@@ -27,7 +27,7 @@ with
             --,accountnumber
             --,creditcardapprovalcode
             --,comment
-        from {{ source('adventure', 'sales_orderheader') }}
+        from {{ source('adventure', 'raw_sales_order_header') }}
     )
 
 select *
