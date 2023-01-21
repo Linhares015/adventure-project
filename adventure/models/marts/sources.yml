@@ -6,3 +6,5 @@ sources:
     schema: dbt_intermediate
     tables:
       - name: int_fct_sales
+
+      - name: int_dim_product
