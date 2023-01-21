@@ -3,7 +3,7 @@ with
         select
             customerid
             ,personid
-            --,storeid
+            ,storeid
             ,territoryid
             --,rowguid
             --,modifieddate
