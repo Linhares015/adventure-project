@@ -8,10 +8,10 @@ with
             --,costlastyear
             --,rowguid
             --,modifieddate
-            ,"Name" as name_territory
+            ,name as name_territory
             ,countryregioncode
-            ,"Group" as group_territory
-        from {{ source('adventure', 'sales_territory') }}
+            ,group_territory
+        from {{ source('adventure', 'raw_sales_territory') }}
     )
 
 select *

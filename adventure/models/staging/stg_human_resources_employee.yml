@@ -1,10 +1,10 @@
 version: 2
 
 models:
-  - name: stg_production_product
-    description: Tabela com as informações dos produtos
+  - name: stg_human_resources_employee
+    description: Tabela com as informações dos funcionarios
     columns:
-       - name: productid
+       - name: businessentityid
          description: chave primaria da tabela
          tests:
           - unique

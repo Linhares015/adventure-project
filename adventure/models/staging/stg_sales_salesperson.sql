@@ -10,7 +10,7 @@ with
             --,saleslastyear
             --,rowguid
             --,modifieddate
-        from {{ source('adventure', 'sales_salesperson') }}
+        from {{ source('adventure', 'raw_sales_person') }}
     )
 
 select *

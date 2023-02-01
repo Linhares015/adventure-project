@@ -43,7 +43,7 @@ with
             ,unitprice
             ,orderqty
             ,unitpricediscount
-            ,subtotal
+            ,(unitprice - unitpricediscount) * orderqty as total
             ,taxamt
             ,freight
             ,purchaseordernumber

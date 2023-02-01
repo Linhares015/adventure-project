@@ -17,7 +17,7 @@ with
             ,sellenddate
             ,discontinueddate
             --,modifieddate
-            ,"Name" as name_product
+            ,name as name_product
             ,productnumber
             ---,color
             --,Size
@@ -26,7 +26,7 @@ with
             ,productline
             --,Class
             --,Style
-        from {{ source('adventure', 'production_product') }}
+        from {{ source('adventure', 'raw_product_product') }}
     )
 
 select *

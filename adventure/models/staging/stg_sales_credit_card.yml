@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_sales_credit_card
+    description: Tabela com as informações do cartão de credito usando no pagamento
+    columns:
+       - name: creditcardid
+         description: chave primaria da tabela
+         tests:
+          - unique
+          - not_null
