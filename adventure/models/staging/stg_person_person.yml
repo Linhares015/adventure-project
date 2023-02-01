@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_person_person
+    description: Tabela com as informações de pessoas
+    columns:
+       - name: businessentityid
+         description: chave primaria da tabela
+         tests:
+          - unique
+          - not_null

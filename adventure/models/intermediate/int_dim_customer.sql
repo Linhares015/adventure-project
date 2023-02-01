@@ -14,11 +14,6 @@ with
         from {{ source('stg', 'stg_sales_salesperson') }}
     )
 
-    ,salesterritory as (
-        select *
-        from {{ source('stg', 'stg_sales_territory') }}
-    )
-
     ,joined as (
         select 
             customer.customerid
@@ -28,14 +23,10 @@ with
             ,store.salespersonid
             --,store.demographics
             ,store.name_store
-            --,salesperson.territoryid 
-            ,salesterritory.name_territory
-            ,salesterritory.countryregioncode
-            ,salesterritory.group_territory
+            ,salesperson.territoryid 
         from customer
         left join store on customer.storeid = store.businessentityid
         left join salesperson on store.salespersonid = salesperson.businessentityid
-        left join salesterritory on salesperson.territoryid = salesterritory.territoryid
     )
 
 select *
