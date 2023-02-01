@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_human_resources_employee
+    description: Tabela com as informações dos funcionarios
+    columns:
+       - name: businessentityid
+         description: chave primaria da tabela
+         tests:
+          - unique
+          - not_null

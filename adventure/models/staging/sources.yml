@@ -24,3 +24,5 @@ sources:
       - name: raw_sales_credit_card
 
       - name: raw_person_person
+
+      - name: raw_human_resources_employee
