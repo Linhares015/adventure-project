@@ -6,7 +6,7 @@ with
             ,demographics
             --,rowguid
             --,modifieddate
-            ,"Name" as name_store
+            ,name as name_store
         from {{ source('adventure', 'raw_sales_store') }}
     )
 

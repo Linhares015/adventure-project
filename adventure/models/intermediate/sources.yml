@@ -20,3 +20,5 @@ sources:
       - name: stg_sales_store
 
       - name: stg_sales_territory
+
+      - name: stg_person_person

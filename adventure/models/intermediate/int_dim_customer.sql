@@ -4,29 +4,29 @@ with
         from {{ source('stg', 'stg_sales_customer') }}
     )
 
-    ,store as (
+    ,sales_territory as (
         select *
-        from {{ source('stg', 'stg_sales_store') }}
+        from {{ source('stg', 'stg_sales_territory')}}
     )
 
-    ,salesperson as (
+    ,person_person as (
         select *
-        from {{ source('stg', 'stg_sales_salesperson') }}
+        from {{ source('stg', 'stg_person_person')}}
     )
 
     ,joined as (
         select 
             customer.customerid
-            --,customer.personid
-            --,customer.territoryid
-            --,store.businessentityid
-            ,store.salespersonid
-            --,store.demographics
-            ,store.name_store
-            ,salesperson.territoryid 
+            ,sales_territory.name_territory
+            ,sales_territory.countryregionCode
+            ,sales_territory.group_territory
+            ,person_person.persontype
+            ,person_person.firstname || ' ' || person_person.middlename  || ' ' || person_person.lastname as name_customer
         from customer
-        left join store on customer.storeid = store.businessentityid
-        left join salesperson on store.salespersonid = salesperson.businessentityid
+        left join sales_territory 
+            on customer.territoryid = sales_territory.territoryid
+        left join person_person 
+            on customer.personid = person_person.businessentityid
     )
 
 select *
