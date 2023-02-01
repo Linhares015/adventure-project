@@ -22,3 +22,5 @@ sources:
       - name: raw_sales_territory
 
       - name: raw_sales_credit_card
+
+      - name: raw_person_person
