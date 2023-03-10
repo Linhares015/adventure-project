@@ -49,8 +49,8 @@ with
             ,purchaseordernumber
             --,onlineorderflag
             ,case 
-                when onlineorderflag is true then 'sim'
-                else 'não'
+                when onlineorderflag is true then 'yes'
+                else 'no'
             end as onlineorder
             ,orderdate
             ,duedate
