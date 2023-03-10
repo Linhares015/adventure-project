@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_sales_reason
+    description: Tabela com as informações dos motivos de venda
+    columns:
+       - name: salesreasonid
+         description: pk da tabela
+         tests:
+          - unique
+          - not_null
+
+       - name: name
+         description: nome do motivo
+
+       - name: reasontype
+         description: tipo do motivo
+       
