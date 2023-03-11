@@ -9,6 +9,11 @@ orderheader as (
     from {{ source('stg', 'stg_sales_orderheader') }}
 ),
 
+reason as (
+    select *
+    from {{ source('stg', 'stg_sales_header_reason') }}
+),
+
 joined as (
     select
         orderdetail.salesorderid,
@@ -17,6 +22,7 @@ joined as (
         orderheader.customerid,
         orderheader.territoryid,
         orderheader.salespersonid,
+        reason.salesreasonid,
         orderheader.currencyrateid,
         orderdetail.unitprice,
         orderdetail.orderqty,
@@ -30,6 +36,7 @@ joined as (
         orderheader.duedate
     from orderdetail
     left join orderheader on orderdetail.salesorderid = orderheader.salesorderid
+    left join reason on orderheader.salesorderid = reason.salesorderid
 ),
 
 transformacoes as (
@@ -41,6 +48,7 @@ transformacoes as (
         territoryid,
         --,salespersonid
         currencyrateid,
+        salesreasonid,
         unitprice,
         orderqty,
         unitpricediscount,
@@ -50,11 +58,13 @@ transformacoes as (
         orderdate,
         duedate,
         --,onlineorderflag
-        COALESCE(salespersonid, 999) as salespersonid,
+        cast(
+            coalesce(salespersonid, 999)
+            as int) as salespersonid,
         (unitprice - unitpricediscount) * orderqty as total,
         case
-            when onlineorderflag is true then 'yes'
-            else 'no'
+            when onlineorderflag is true then 'Sim'
+            else 'Não'
         end as onlineorder
     from joined
 )

@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_sales_header_reason
+    description: Tabela com as informações detalhadas das vendas da empresa
+    columns:
+       - name: salesorderid
+         description: pk da tabela, fará o vinculo com a salesorderheader

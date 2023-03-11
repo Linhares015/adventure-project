@@ -28,3 +28,5 @@ sources:
       - name: raw_human_resources_employee
 
       - name: raw_sales_reason
+
+      - name: raw_sales_order_header_reason

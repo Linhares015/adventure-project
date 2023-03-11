@@ -26,3 +26,5 @@ sources:
       - name: stg_sales_reason
 
       - name: stg_human_resources_employee
+
+      - name: stg_sales_header_reason
