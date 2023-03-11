@@ -15,3 +15,5 @@ sources:
       - name: int_dim_reason
 
       - name: int_dim_sales_person
+
+      - name: int_dim_territory
