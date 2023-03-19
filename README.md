@@ -1,44 +1,24 @@
-Adventure Project
+🚀 Descubra o Projeto Adventure: Transformando BI numa Experiência de Alto Impacto! 🌟
 
-Este é um projeto de exemplo que demonstra como criar um projeto de Business Intelligence (BI) do zero usando o banco de teste da Microsoft AdventureWorks no formato modern data stack.
+Acelere sua jornada de Business Intelligence com nosso projeto inovador, que vai muito além da simples visualização no Power BI. Apresentamos o Adventure Project, um exemplo completo e envolvente de um projeto de BI do zero, utilizando o famoso banco de dados de teste da Microsoft AdventureWorks.
 
-Usando as seguintes ferramentas:
+💼 Ferramentas de ponta que você vai amar:
 
-PostgreSQL - Nele terá o banco Transacional e o Data Warehouses;
-Docker - Terá o container do banco Postgress;
-Github - Versionador de código;
-DBT (Data Build Tool) - Será usado no processamento e transformação dos dados;
-Vscode - Será a IDE de codificação.
+PostgreSQL - Sua base sólida para o banco transacional.
+BigQuery - O Data Warehouse perfeito para suas necessidades.
+GitHub - Controle de versão e colaboração simplificada.
+DBT (Data Build Tool) - Revolucione o processamento e transformação de dados.
+VSCode - A mais eficiente e amigável IDE de codificação.
+🎯 Objetivo do Projeto:
+Criamos uma plataforma de dados para potencializar relatórios e dashboards, auxiliando empresas de varejo a compreender profundamente seus dados de vendas e tomar decisões informadas. O Adventure Project é baseado no banco de dados AdventureWorks, que oferece uma rica variedade de informações, incluindo vendas, estoque, clientes e muito mais.
 
-Descrição do projeto
-Este projeto tem como objetivo criar uma plataforma de dados, que sustentará um conjunto de relatórios e dashboards para ajudar uma empresa de varejo a entender melhor seus dados de vendas e tomar decisões informadas. Para isso, vamos utilizar o banco de teste da Microsoft AdventureWorks, que é um banco de dados de exemplo que inclui dados de vendas, estoque, clientes e muito mais.
+⚙️ Infraestrutura completa:
+O Adventure Project utiliza as melhores ferramentas de análise de dados para construir uma infraestrutura robusta e escalável desde o início. Essa abordagem pode ser facilmente aplicada em projetos futuros e já é um sucesso comprovado no mercado.
 
-Usaremos ferramentas que estão na linha de frente da análise de dados e montaremos toda a infraestrutura do zero, para base desse projeto e de outros que a empresa quisesse aplicar no futuro, esse modelo de trabalho apesar de aqui ser em base teste, pode e já é aplicado no mercado e tem grandes benefícios.
+🌐 Foco no projeto completo:
+Nosso principal objetivo é oferecer uma experiência completa de Business Intelligence, indo além da simples visualização dos dados no Power BI.
 
-O foco aqui é no projeto completo e não apenas na visualização dos dados via Power BI.
+🔧 Como usar:
+Clone nosso repositório e adapte-o às suas necessidades.
 
-Instalação
-Para instalar este projeto, você precisará seguir os seguintes passos:
-
-Clone o repositório do projeto usando o Git:
-Copy code
-git clone https://github.com/seu-usuario/adventure-project.git
-cd adventure-project
-Instale as dependências necessárias:
-Copy code
-pip install -r requirements.txt
-
-Faça o pull da máquina com o banco de teste da Microsoft AdventureWorks em PostgreSQL chriseaton/adventureworks:postgres, ou se preferir você pode baixar o banco e restaurar o backup no seu sqlserver, irá encontrar instruções detalhadas sobre como fazer isso .
-
-Configure as credenciais de acesso ao banco de dados no arquivo dbt_project.yml.
-
-Execute o comando dbt run para processar e carregar os dados para o banco de dados PostgreSQL.
-
-Uso
-Uma vez que os dados foram processados e carregados para o banco de dados PostgreSQL, você pode usar uma ferramenta de visualização de dados para criar relatórios e dashboards. Algumas opções populares incluem o Tableau e o Power BI.
-
-Contribuição
-Por enquanto não estamos aceitando contribuições no código, por se tratar de um projeto para aplicação de conhecimento.
-
-
-Ass: Tiago Linhares.
+Assinado: Tiago Linhares, especialista em transformar projetos de BI!
